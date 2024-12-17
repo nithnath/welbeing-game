@@ -351,6 +351,12 @@ function menu_control () {
         level_1()
     }
 }
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherSprite) {
+    if (otherSprite == Play && controller.A.isPressed()) {
+        level = 1
+        menu_control()
+    }
+})
 let mySprite: Sprite = null
 let Mouse: Sprite = null
 let Play: Sprite = null
