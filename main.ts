@@ -28,6 +28,7 @@ function place_human () {
         ........44..44..........
         .......fff.fff..........
         `, SpriteKind.Player)
+    tiles.placeOnTile(mySprite, tiles.getTileLocation(84, 20))
 }
 function level_1 () {
     scene.setBackgroundImage(img`
@@ -357,9 +358,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Player, function (sprite, otherS
         menu_control()
     }
 })
-let mySprite: Sprite = null
 let Mouse: Sprite = null
 let Play: Sprite = null
+let mySprite: Sprite = null
 let Human: Sprite = null
 let level = 0
 level = 0
