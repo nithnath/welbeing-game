@@ -330,9 +330,28 @@ function menu_control () {
         sprites.destroy(Mouse)
         sprites.destroy(Play)
         tiles.setCurrentTilemap(tilemap`level2`)
+        mySprite = sprites.create(img`
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            . . . . . . . . . . . . . . . . 
+            `, SpriteKind.Player)
         level_1()
     }
 }
+let mySprite: Sprite = null
 let Mouse: Sprite = null
 let Play: Sprite = null
 let Human: Sprite = null
